@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <style>
+        .error-container {
+            padding: 28px;
+            background: #e74c3c;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #fff;
+            color: #e74c3c;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .home-link:hover {
+            background: #f8f8f8;
+        }
+
+        @media (max-width: 500px) {
+            .error-container {
+                padding: 24px 8px 20px 8px;
+            }
+
+            .error-code {
+                font-size: 3.2rem;
+            }
+
+            .error-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <div class="error-code">404</div>
+    <div class="error-title">Page Not Found</div>
+    <div class="error-message">
+        The page you are looking for doesn't exist or has been moved.<br>
+        Please check the URL or navigate back to the homepage.
+    </div>
+    <a href="/home" class="home-link">Go to Homepage</a>
+</div>
+</body>
+</html>
